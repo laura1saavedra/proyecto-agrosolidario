@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil propietario de finca</title>
+
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header class="header">
+  <span>AgroSolidario</span>
+
+  <nav>
+    <a href="./pe-propietario.html">Mi finca</a>
+    <a href="./ofertas.html">Mis ofertas</a>
+    <a href="./busqueda.html">Búsqueda de trabajadores</a>
+    <a href="../index.html">Cerrar sesión</a>
+  </nav>
+</header>
+
+<main class="container perfil perfil-propietario">
+
+  <!------------------- DATOS PERSONALES ------------------------>
+  <div class="perfil-top">
+    <h2 class="perfil-top__title">Perfil:</h2>
+    <a href="./busqueda.html" class="perfil-top__arrow" aria-label="Volver">→</a>
+  </div>
+
+  <section class="form-box perfil-card">
+    <p class="perfil-card__section-title">Datos personales:</p>
+
+    <div class="perfil-grid">
+      <div class="full">
+        <label for="nombre">Nombre completo:</label>
+        <input id="nombre" class="readonly" type="text"
+               value="Lorem ipsum dolor sit amet, consectetuer" disabled>
+      </div>
+
+      <div>
+        <label for="doc">Número de documento:</label>
+        <input id="doc" class="readonly" type="text"
+               value="Lorem ipsum dolor sit" disabled>
+      </div>
+
+      <div>
+        <label for="ubicacion">Ubicación:</label>
+        <input id="ubicacion" type="text" value="Lorem ipsum dolor sit">
+      </div>
+
+      <div>
+        <label for="celular">Número de celular:</label>
+        <input id="celular" type="tel" value="Lorem ipsum dolor sit">
+      </div>
+
+      <div>
+        <label for="correo">Correo:</label>
+        <input id="correo" class="readonly" type="email"
+               value="Lorem ipsum dolor sit" disabled>
+      </div>
+    </div>
+
+    <p class="perfil-estado-doc">Documento de identidad - Guardado</p>
+  </section>
+
+  <!--------------------- MI FINCA ----------------------->
+  <div class="perfil-top perfil-top--finca">
+    <h2 class="perfil-top__title">Mi finca:</h2>
+  </div>
+
+  <section class="form-box perfil-card">
+    <p class="perfil-card__section-title">Información de la finca:</p>
+
+    <div class="perfil-grid finca-grid">
+      <div>
+        <label for="nombre-finca">Nombre de la finca:</label>
+        <input id="nombre-finca" type="text" value="Lorem ipsum dolor sit">
+      </div>
+
+      <div>
+        <label for="ubicacion-finca">Ubicación:</label>
+        <input id="ubicacion-finca" type="text" value="Lorem ipsum dolor sit">
+      </div>
+
+      <div>
+        <label for="tamano">Tamaño o extensión (hectáreas):</label>
+        <input id="tamano" type="text" value="Lorem ipsum dolor sit">
+      </div>
+
+      <div>
+        <label for="tipo-prod">Tipo de producción:</label>
+        <input id="tipo-prod" type="text" value="Lorem ipsum dolor sit">
+      </div>
+
+      <div class="full">
+        <label for="desc-finca">Descripción de la finca:</label>
+        <textarea id="desc-finca">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aliquam lorem ante.</textarea>
+      </div>
+    </div>
+
+    <p class="perfil-estado-doc">Documento de la finca - Guardado</p>
+  </section>
+
+  <!------------------------ FOTO + NOTA + BOTONES ---------------------->
+  <section class="perfil-bottom">
+
+    <div class="form-box perfil-card perfil-upload">
+      <div class="perfil-upload__row">
+        <p>Adjunte una foto de perfil:</p>
+
+        <label class="upload-btn" for="foto">Subir archivo</label>
+        <input id="foto" class="file-input" type="file" accept="image/*">
+      </div>
+    </div>
+
+    <div class="form-box perfil-card perfil-note">
+      <p class="perfil-note__title">Tener presente:</p>
+      <p>
+        Los datos como el nombre, el número de documento y el correo, no podrán ser cambiados
+        a menos de que el usuario pida este al correo servicioalcliente@agrosolidario.com
+      </p>
+    </div>
+
+    <div class="perfil-actions">
+      <a href="./busqueda.html" class="btn-dark perfil-actions__btn">Cancelar</a>
+      <a href="./info-guardada2.html" class="btn-dark perfil-actions__btn" type="submit">
+        Guardar cambios
+      </a>
+    </div>
+
+  </section>
+
+</main>
+
+    
+</body>
+</html>
