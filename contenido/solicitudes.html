@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Solicitudes de empleo </title>
+
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+
+    <link rel="stylesheet" href="../style.css">
+    
+</head>
+
+<body>
+    <header>
+        <div class="logo">AgroSolidario</div>
+        <nav>
+            <a href="./solicitudes.html">Gestión de solicitudes</a>
+            <a href="./pe-persona.html">Perfil</a>
+            <a href="../index.html">Cerrar sesión</a>
+        </nav>
+    </header>
+
+    <section class="gestion">
+        <div class="gestion__encabezado">
+            <h1>Gestión de solicitudes de empleo</h1>
+            <p>Acepta o rechaza la solicitud de empleo enviada por el propietario de finca</p>
+        </div>
+
+        <div class="gestion__panel">
+            <h2 class="gestion__rol">Trabajador agrícola</h2>
+
+            <article class="solicitud-card">
+                <img class="solicitud-card__img" src="../imagenes/finca.jpeg" alt="Foto de la finca" />
+
+                <div class="solicitud-card__info">
+                    <p><strong>Finca:</strong></p>
+                    <p><strong>Ubicación:</strong></p>
+                    <p><strong>Fecha de envío:</strong></p>
+                    <p><strong>Fecha de límite de respuesta:</strong></p>
+                </div>
+
+                <div class="solicitud-card__detalles">
+                    <a href="detalles-oferta.html" class="btn-dark btn-dark--detalles">Detalles</a>
+                </div>
+
+                <div class="solicitud-card__acciones">
+                    <button class="btn-dark">Aceptar</button>
+                    <button class="btn-dark">Rechazar</button>
+                </div>
+            </article>
+        </div>
+
+        <a  href="./histo-solicitudes.html" class="btn-dark btn-dark--historial">Historial</a>
+       
+    </section>
+</body>
+</html>
